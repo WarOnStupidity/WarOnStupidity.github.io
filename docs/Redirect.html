@@ -1,0 +1,120 @@
+<html>
+<head>
+    <style>
+        h1,h2 {
+            font-family: "Arial";
+    
+        }
+
+.ani {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  animation-name: example;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  0%   {left:0px; top:0px; transform: scale(1);}
+  50% {left:0px; top:0px; transform: scale(3);}
+  100% {left:0px; top:0px; transform: scale(1);}
+}
+
+    .animate-charcter
+    {
+       
+      background-image: linear-gradient(
+        -225deg,
+        #231557 0%,
+        #44107a 29%,
+        #ff1361 67%,
+        #fff800 100%
+      );
+      background-size: auto auto;
+      background-clip: border-box;
+      background-size: 200% auto;
+      color: #fff;
+      background-clip: text;
+      text-fill-color: transparent;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: textclip 2s linear infinite;
+      display: inline-block;
+          font-size: 29px;
+    }
+    
+    @keyframes textclip {
+      to {
+        background-position: 200% center;
+      }
+    }
+
+  .waviy {
+  position: relative;
+}
+.waviy span {
+  position: relative;
+  display: inline-block;
+  font-size: 40px;
+  color: #fff;
+  text-transform: uppercase;
+  animation: flip 2s infinite;
+  animation-delay: calc(.2s * var(--i))
+}
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg) 
+  }
+        
+</style
+<script type="text/javascript">
+<!--
+function en(c){var x='charCodeAt',b,e={},f=c.split(""),d=[],a=f[0],g=256;for(b=1;b<f.length;b++)c=f[b],null!=e[a+c]?a+=c:(d.push(1<a.length?e[a]:a[x](0)),e[a+c]=g,g++,a=c);d.push(1<a.length?e[a]:a[x](0));for(b=0;b<d.length;b++)d[b]=String.fromCharCode(d[b]);return d.join("")}
+
+function de(b){var a,e={},d=b.split(""),c=f=d[0],g=[c],h=o=256;for(b=1;b<d.length;b++)a=d[b].charCodeAt(0),a=h>a?d[b]:e[a]?e[a]:f+c,g.push(a),c=a.charAt(0),e[o]=f+c,o++,f=a;return g.join("")}
+
+function delayer(){
+    var params = new URLSearchParams(decodeURIComponent(decodeURIComponent(document.location.search)));
+    var id = params.get("id");
+    var enc = params.get("enc");
+    var enc_2 = btoa(enc);
+    enc_2 = en(enc_2);
+    var eurl = location.origin + `?id=${enc_2}`;
+    prompt(id,eurl);
+
+    if(id != undefined){
+        var dec_id = de(id);
+        var id_2 = atob(dec_id);
+        window.location = atob(id);
+    }
+    //
+}
+//-->
+</script>
+</head>
+<body onLoad="delayer()">
+
+<center>    
+    <br/>
+               <div class="waviy">
+   <span style="--i:1">L</span>
+   <span style="--i:2">o</span>
+   <span style="--i:3">a</span>
+   <span style="--i:4">d</span>
+   <span style="--i:5">i</span>
+   <span style="--i:6">n</span>
+   <span style="--i:7">g</span>
+   <span style="--i:8">.</span>
+  </div>
+    <br/>
+    Please Wailt...
+    <br/>
+<h1 class="animate-charcter">WarOnStupidity is redirecting you to original source article !</h1>
+<p>As we don't steal. <br/> <h2>"Mujhe credit nehi chahiye"</h2></p>
+
+
+<div><img   src="https://pbs.twimg.com/profile_images/942460686457757696/QumvbUNW_400x400.jpg"></div>
+               </center>
+</body>
+</html>
